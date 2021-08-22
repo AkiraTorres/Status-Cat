@@ -2,11 +2,11 @@
     "name": "HTTPCatsBotV2",
     "version": "1.0.0",
     "type": "module",
-    "main": "index.js",
+    "main": "app.js",
     "license": "MIT",
     "scripts": {
-        "start": "node --experimental-json-modules ./src/index.js",
-        "dev": "nodemon --experimental-json-modules ./src/index.js",
+        "start": "node --experimental-json-modules ./src/app.js",
+        "dev": "nodemon --experimental-json-modules ./src/app.js",
         "deploy": "git push heroku main"
     },
     "dependencies": {
