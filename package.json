@@ -5,7 +5,9 @@
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-        "dev": "nodemon --experimental-json-modules ./src/index.js"
+        "start": "node --experimental-json-modules ./src/index.js",
+        "dev": "nodemon --experimental-json-modules ./src/index.js",
+        "deploy": "git push heroku main"
     },
     "dependencies": {
         "node-telegram-bot-api": "^0.54.0"
