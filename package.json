@@ -1,7 +1,6 @@
 {
     "name": "HTTPCatsBotV2",
     "version": "1.0.0",
-    "type": "module",
     "main": "app.js",
     "license": "MIT",
     "scripts": {
@@ -10,6 +9,7 @@
         "deploy": "git push heroku main"
     },
     "dependencies": {
+        "dotenv": "^10.0.0",
         "node-telegram-bot-api": "^0.54.0"
     },
     "devDependencies": {

@@ -1,10 +1,10 @@
-import TelegramBot from "node-telegram-bot-api";
-import statusCode from "./statusCode.json";
+const TelegramBot = require("node-telegram-bot-api");
+const statusCode = require("./statusCode.json");
+require("dotenv").config({path: __dirname + '/.env'});
 
-const TOKEN = "917350378:AAHJF69eFzjWACjhVErLP0p8rx1-GYjXFRY";
+const TOKEN = process.env.API_KEY;
 const Cats = "https://http.cat/"
-
-const bot = new TelegramBot(TOKEN, {polling: true});
+const bot = new TelegramBot(TOKEN, {polling: false});
 
 bot.on("new_chat_members", (msg) => {
     bot.sendMessage(
