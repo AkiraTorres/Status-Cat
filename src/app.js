@@ -4,7 +4,7 @@ require("dotenv").config({path: __dirname + '/.env'});
 
 const TOKEN = process.env.API_KEY;
 const Cats = "https://http.cat/"
-const bot = new TelegramBot(TOKEN, {polling: false});
+const bot = new TelegramBot(TOKEN, {polling: true});
 
 bot.on("new_chat_members", (msg) => {
     bot.sendMessage(
