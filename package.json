@@ -1,0 +1,16 @@
+{
+    "name": "HTTPCatsBotV2",
+    "version": "1.0.0",
+    "type": "module",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "dev": "nodemon --experimental-json-modules ./src/index.js"
+    },
+    "dependencies": {
+        "node-telegram-bot-api": "^0.54.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.12"
+    }
+}
